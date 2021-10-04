@@ -8,7 +8,7 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
     <main>
       watame
       <BlogPostTemplate
-      content={widgetFor('body')}
+      content="{widgetFor('body')}"
       description={entry.getIn(['data', 'description'])}
       tags={tags && tags.toJS()}
       title={entry.getIn(['data', 'title'])}
